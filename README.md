@@ -1,15 +1,3 @@
-.. image:: https://img.shields.io/pypi/v/django-erp-framework.svg
-    :target: https://pypi.org/project/django-erp-framework
-
-.. image:: https://img.shields.io/pypi/pyversions/django-erp-framework.svg
-    :target: https://pypi.org/project/django-erp-framework
-
-.. image:: https://img.shields.io/readthedocs/django-erp-framework
-    :target: https://django-erp-framework.readthedocs.io/
-
-.. image:: https://img.shields.io/codecov/c/github/ra-systems/django-erp-framework
-    :target: https://codecov.io/gh/ra-systems/django-erp-framework
-
 ### Django ERP Framework
 
 #### Overview
