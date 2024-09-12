@@ -10,91 +10,72 @@
 .. image:: https://img.shields.io/codecov/c/github/ra-systems/django-erp-framework
     :target: https://codecov.io/gh/ra-systems/django-erp-framework
 
+### Django ERP Framework
+
+#### Overview
+
+The Django ERP Framework is a lightweight, powerful solution designed to streamline the creation of business applications, resource planning, and management systems. Built on the Django framework, this ERP platform offers a ready-made infrastructure for rapidly developing data-driven applications. With built-in reporting, charting, and dashboard capabilities, it provides a comprehensive environment for managing and visualizing business data.
+
+#### Key Features
+
+1. Advanced Reporting Engine
+
+* Description: The built-in reporting engine allows users to generate complex reports from any model in your Django applications. It supports grouped reports, time series analysis, and crosstab functionality, making it an essential tool for business data analysis.
+
+* Technology:
+
+- Developed using Django ORM to query and manipulate data across various models.
+
+- Pandas and NumPy libraries are used for advanced data processing and generating time series or crosstab reports.
+
+- Integrated with Django templates to render reports in various formats (HTML, PDF, Excel).
+
+2. Dynamic Charting Capabilities
+
+* Description: This feature allows users to represent data visually through charts, making it easier to understand complex reports. The charting engine supports multiple chart types, including bar, line, and pie charts.
+
+* Technology:
+
+- Chart.js and Matplotlib are used to handle chart creation and data visualization.
+
+- Seamlessly integrated with the reporting engine to allow users to toggle between data views and visual representations.
+
+3. Widget-Based Dashboard System
+
+* Description: Create customizable dashboards by adding widgets that display snippets of reports or charts. Users can design their own personalized dashboards with widgets that update in real-time, offering a snapshot of the most critical business metrics.
+
+* Technology:
+
+- Built using Django’s template system and JavaScript for interactive, real-time updates.
+
+- Bootstrap and Django Jazzmin are used for responsive and visually appealing dashboard layouts.
+
+- Widget system allows integration of AJAX for dynamic content loading without refreshing the page.
+
+4. Customizable and Extensible
+
+* Description: The framework is highly modular, allowing developers to extend and customize the functionality to meet specific business requirements. Add new modules, customize reports, and integrate third-party tools effortlessly.
+
+* Technology:
+
+- The Django app structure makes it easy to plug in additional features or extend existing ones.
+
+- Python 3.8+ compatibility ensures modern code practices and easy integration with other Python libraries.
+
+5. Django Jazzmin Admin Theme Integration
+
+* Description: Out-of-the-box integration with the Django Jazzmin admin theme provides a sleek and intuitive interface for managing the ERP system. Jazzmin offers enhanced user experience with a modern UI for Django’s built-in admin.
+
+* Technology:
+- Django Jazzmin is integrated directly with the framework’s admin panel, leveraging Django’s admin customization features to provide a responsive and user-friendly interface.
 
 
+### Technology Stack
 
-
-Django ERP Framework
-====================
-
-A light-weight, effective, Django based framework to create various business applications, resource planing and management systems.
-
-Offers a ready made platform where you can start to create data entry pages and attach various reports to them.
-
-Features
---------
-
-* A Reporting Engine that can generate grouped reports and/or time series and/or crosstab from any model in your apps.
-* Charting capabilities to represent the data in the reports.
-* Widget system to create dashboards and display bits of the reports results and/or its charts on any page you want.
-* Customizable and easily extensible.
-* Django Jazzmin admin theme integration ready to use.
-* Python 3.8 / 3.9 / 3.10 , Django 3.2 +
-
-
-
-Installation
-------------
-
-.. code-block:: console
-
-    $ pip install django-erp-framework
-        OR
-    $ pip install -e git+https://github.com/RamezIssac/django-erp-framework.git#egg=django-erp-framework@develop
-
-
-Check out the `getting started <https://django-erp-framework.readthedocs.io/en/latest/getting_started/index.html>`_  on Read The Docs.
-
-
-Demo
-----
-
-You can checkout a demo application `here <https://my-shop.django-erp-framework.com>`_.
-
-Code is available on `Github <https://github.com/RamezIssac/my-shop>`_.
-
-.. image:: https://github.com/RamezIssac/django-erp-framework/blob/develop/docs/source/_static/widgets.png?raw=true
-    :alt: Homepage
-    :align: center
-
-
-Documentation
--------------
-
-Available on `Read The Docs <https://django-erp-framework.readthedocs.io/en/latest/>`_
-
-Please Proceed to the tutorial `Create a sales application Part 1 <https://django-erp-framework.readthedocs.io/en/latest/getting_started/index.html>`_
-
-
-Reporting Engine
-----------------
-
-The reporting engine of this framework is released as a separate package `django-slick-reporting <https://pypi.org/project/django-slick-reporting/>`_.
-
-
-Testing and contribution
-------------------------
-
-To run the test suite, first, create and activate a virtual environment. Then
-clone the repo, install the test requirements and run the tests::
-
-    # 1. Clone and install requirements
-    $ git clone git+git@github.com:ra-systems/django-erp-framework.git
-    $ cd tests
-    $ pip install -e ..
-    $ pip install -r requirements.txt
-
-    # 2. Set the test database connection details in the environment
-    $ export DATABASE_NAME=<database name>
-    $ export DATABASE_USER=<database user>
-    $ export DATABASE_PASSWORD=<database password if any>
-
-    # 3. Run the tests
-    $ ./runtests.py
-    # And for Coverage report
-    $ coverage run --include=../* runtests.py [-k]
-    $ coverage html
-    
-
-For more information on contributing, we honor `Django's guidelines <https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/>`_.
-
+* Backend Framework: Django 3.2+
+* Python Compatibility: Python 3.8 / 3.9 / 3.10+
+* Database Management: Django ORM (Supports PostgreSQL, MySQL, SQLite, and more)
+* Reporting & Data Processing: Pandas, NumPy
+* Charting & Visualization: Chart.js, Matplotlib
+* Frontend & UI: Bootstrap, Django Jazzmin, AJAX for dynamic content loading
+* Testing & Debugging: Django’s built-in testing framework, PyTest for advanced testing
